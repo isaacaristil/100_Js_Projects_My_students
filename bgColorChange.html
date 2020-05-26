@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="fr">
 <head>
-
-	<meta http-equiv="refresh" content="2">
+	<!--
+	<meta http-equiv="refresh" content="2"> -->
 	<meta charset="utf-8">
   <title>Change Background Color Project</title>
   
@@ -50,6 +50,28 @@
 			<input id="btn_color" type="button" value="Click Me!" onclick="">
 		</div>	
 	</div>
+	
+	<script>
+		var color = ["tomato" ,"yellow" ,"blue" ,"red" ,"orange" ,"pink"],
+			length = color.length,
+			random = Math.floor(Math.random()* length)
+			element = document.getElementById("container");
+			bgColor = color[random]
+			;
+			
+			
+		element.addEventListener("click",changeBgColor());
+		
+		function changeBgColor() {element.style.backgroundColor = bgColor; console.log(bgColor)}	
+			
+		
+		
+		
+		
+		
+		
+	</script>
+	
  
  
 </body>
